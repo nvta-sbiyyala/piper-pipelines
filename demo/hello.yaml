@@ -15,7 +15,7 @@ tasks:
     label: Generate a random number
     type: random/int
     startInclusive: 0
-    endInclusive: 100000
+    endInclusive: 10000
 
   - label: Print a greeting
     type: io/print
@@ -25,11 +25,15 @@ tasks:
     type: io/print
     text: Hello ${name}, there's an additional step - sleep for ${randomNumber} millis NOW!
 
+  - label: Going to sleep, first time
+    type: time/sleep
+    millis: ${randomNumber}
+
   - label: Print yet another additional message
     type: io/print
     text: Hello ${name}, there's yet an additional step! - sleep for ${randomNumber} millis AGAIN!
 
-  - label: Going to sleep
+  - label: Going to sleep, second time
     type: time/sleep
     millis: ${randomNumber}
 
