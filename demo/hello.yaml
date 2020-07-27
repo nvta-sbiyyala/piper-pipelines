@@ -15,11 +15,15 @@ tasks:
     label: Generate a random number
     type: random/int
     startInclusive: 0
-    endInclusive: 5000
+    endInclusive: 100000
 
   - label: Print a greeting
     type: io/print
-    text: Hello ${name}, how are you today?
+    text: Hello ${name}, how are you today? Updated.
+
+  - label: Print an additional message
+    type: io/print
+    text: Hello ${name}, there's an additional step.
 
   - label: Sleep a little
     type: time/sleep
@@ -27,4 +31,4 @@ tasks:
 
   - label: Print a farewell
     type: io/print
-    text: Goodbye ${name}, until next time!
+    text: Goodbye ${name}, until next time! Updated.
