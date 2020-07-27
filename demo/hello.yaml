@@ -23,7 +23,7 @@ tasks:
 
   - label: Print an additional message
     type: io/print
-    text: Hello ${name}, there's an additional step - will sleep for ${randomNumber} millis now.
+    text: Hello ${name}, there's an additional step - sleep for ${randomNumber} millis NOW!
 
   - label: Going to sleep
     type: time/sleep
