@@ -25,6 +25,10 @@ tasks:
     type: io/print
     text: Hello ${name}, there's an additional step - sleep for ${randomNumber} millis NOW!
 
+  - label: Print yet another additional message
+    type: io/print
+    text: Hello ${name}, there's yet an additional step! - sleep for ${randomNumber} millis AGAIN!
+
   - label: Going to sleep
     type: time/sleep
     millis: ${randomNumber}
